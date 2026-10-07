@@ -25,9 +25,7 @@ def mostrar_ruta(ruta):
 
 
 def buscar_ruta():
-    """
-    Ejecuta la búsqueda de rutas mediante el algoritmo A*.
-    """
+  
 
     estaciones = obtener_estaciones()
 
@@ -94,11 +92,7 @@ def buscar_ruta():
 
 
 def realizar_prediccion():
-    """
-    Ejecuta el componente de aprendizaje supervisado
-    para estimar la duración de un viaje.
-    """
-
+  
     print("\n==========================================")
     print("       PREDICCIÓN DE DURACIÓN")
     print("==========================================")
@@ -147,10 +141,7 @@ def realizar_prediccion():
             )
             return
 
-        # ------------------------------------------
-        # Validar distancia
-        # ------------------------------------------
-
+       
         distancia_km = float(
             input("Ingrese la distancia del recorrido (km): ")
         )
@@ -161,9 +152,7 @@ def realizar_prediccion():
             )
             return
 
-        # ------------------------------------------
-        # Validar número de paradas
-        # ------------------------------------------
+    
 
         numero_paradas = int(
             input("Ingrese el número de paradas: ")
@@ -176,17 +165,11 @@ def realizar_prediccion():
             )
             return
 
-        # ------------------------------------------
-        # Entrenar modelo
-        # ------------------------------------------
-
+ 
         print("\nEntrenando modelo...")
 
         modelo, mae, mse, r2 = entrenar_modelo()
 
-        # ------------------------------------------
-        # Realizar predicción
-        # ------------------------------------------
 
         prediccion = predecir_duracion(
             modelo,
