@@ -6,9 +6,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 
 def entrenar_modelo():
-    """
-    Carga el dataset y entrena el árbol de decisión.
-    """
+
 
     datos = pd.read_csv("datos/dataset_transporte.csv")
 
@@ -55,9 +53,7 @@ def predecir_duracion(
     distancia_km,
     numero_paradas
 ):
-    """
-    Realiza una predicción para un nuevo viaje.
-    """
+
 
     nuevo_viaje = pd.DataFrame(
         [
@@ -77,9 +73,7 @@ def predecir_duracion(
 
 
 def ejecutar_modelo():
-    """
-    Ejecuta el modelo de manera independiente.
-    """
+
 
     modelo, mae, mse, r2 = entrenar_modelo()
 
