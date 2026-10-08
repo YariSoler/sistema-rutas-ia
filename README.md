@@ -1,6 +1,11 @@
 # Sistema Inteligente de Rutas
 
 ## Actividad 3 – Aprendizaje Supervisado
+PDF:
+[pruebas_componente.pdf](https://github.com/user-attachments/files/33183622/pruebas_componente.pdf)
+[descripcion_datos.pdf](https://github.com/user-attachments/files/33183627/descripcion_datos.pdf)
+
+
 
 Proyecto académico desarrollado como continuación del sistema inteligente de rutas para transporte masivo. El proyecto conserva la búsqueda de rutas mediante el algoritmo A* e incorpora un componente de aprendizaje supervisado para estimar la duración de un viaje.
 
